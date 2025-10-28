@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christian Lonoy — Petroleum Engineering Portfolio</title>
+  <meta name="description" content="Portfolio — Petroleum Engineering graduate. Projects: AutoCAD, Petrel, Aspen; Skills; Education; Certificates; Awards; Contact." />
+
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0b1220; --muted:#6b7280; --accent:#0f4c81; --card:#f7f9fb;
+      --radius:12px; --container:1100px;
+      --max-width:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--container);margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0b6aa8);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    nav a{margin-left:18px;font-weight:600;color:var(--muted)}
+    nav a:hover{color:var(--fg)}
+
+    /* Hero */
+    .hero{display:flex;gap:32px;align-items:center;padding:40px 0}
+    .hero-left{flex:1}
+    .title{font-size:28px;font-weight:700;margin:0 0 8px}
+    .subtitle{color:var(--muted);margin:0 0 20px}
+    .cta{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;font-weight:700}
+
+    /* Sections */
+    section{padding:28px 0;border-top:1px solid #eef2f6}
+    h2{font-size:18px;margin:0 0 18px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+
+    /* Grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .skills-list{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{padding:8px 10px;border-radius:999px;background:white;border:1px solid #e6eef6;font-weight:600;font-size:13px}
+
+    /* Portfolio cards */
+    .proj{background:white;padding:16px;border-radius:12px;border:1px solid #eef3f8}
+    .proj .tools{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+    .proj .thumb{height:120px;border-radius:8px;background:linear-gradient(90deg,#eef4fb,#f8fbff);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+
+    /* Contact */
+    .contact-grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .form input,.form textarea{width:100%;padding:10px;border-radius:10px;border:1px solid #e5eef7;margin-bottom:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;font-weight:700}
+
+    footer{padding:24px 0;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .contact-grid{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:flex-start}
+      .avatar{width:56px;height:56px}
+    }
+    @media (max-width:560px){
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      nav a{margin-left:0}
+      .title{font-size:22px}
+    }
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">CL</div>
+        <div>
+          <div style="font-weight:700">Christian Lonoy</div>
+          <div class="muted small">Petroleum Engineering Graduate</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-left">
+          <h1 class="title">Christian Lonoy</h1>
+          <p class="subtitle">Petroleum Engineering graduate — hands‑on experience with reservoir mapping, process simulation, and technical drawing. Focused on practical engineering deliverables and clear reporting.</p>
+          <a class="cta" href="#contact">Get in touch</a>
+          <a style="margin-left:14px;color:var(--muted);font-weight:600" href="resume.pdf" download>Download Resume</a>
+        </div>
+        <div style="width:260px">
+          <div class="card" style="text-align:center">
+            <div style="width:100%;height:160px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;margin-bottom:12px">
+              <!-- placeholder for profile / project image -->
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="4" fill="#eef4fb"/><text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="28" fill="#6b7280" font-family="Arial">CL</text></svg>
+            </div>
+            <div class="muted small">Available for roles in reservoir engineering, production, and process operations.</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>I am a Petroleum Engineering graduate with experience in reservoir interpretation, process simulation, and technical drafting. I create clear deliverables — maps, P&IDs, simulation runs, and technically sound reports. I’m proficient with AutoCAD, Petrel, and Aspen, and I enjoy turning complex data into actionable engineering decisions.</p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid">
+
+          <!-- Project 1 -->
+          <article class="proj">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="flex:1">
+                <strong>Reservoir Structure Map — Field A</strong>
+                <div class="small muted">Interpretation, contouring, structural mapping</div>
+              </div>
+              <div style="text-align:right"><button class="btn" onclick="openProject(1)">Details</button></div>
+            </div>
+            <div class="thumb" style="margin-top:12px">AutoCAD / Petrel</div>
+            <div class="tools">
+              <span class="tag">AutoCAD</span>
+              <span class="tag">Petrel</span>
+              <span class="tag">Structural Mapping</span>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="proj">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="flex:1">
+                <strong>Process Simulation — Plant B</strong>
+                <div class="small muted">Aspen HYSYS simulation for separator train and throughput</div>
+              </div>
+              <div style="text-align:right"><button class="btn" onclick="openProject(2)">Details</button></div>
+            </div>
+            <div class="thumb" style="margin-top:12px">Aspen</div>
+            <div class="tools">
+              <span class="tag">Aspen</span>
+              <span class="tag">Process Simulation</span>
+              <span class="tag">P&ID</span>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="proj">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="flex:1">
+                <strong>Well Corr. Drawings & As‑built</strong>
+                <div class="small muted">Technical drawings and revision control using AutoCAD</div>
+              </div>
+              <div style="text-align:right"><button class="btn" onclick="openProject(3)">Details</button></div>
+            </div>
+            <div class="thumb" style="margin-top:12px">AutoCAD</div>
+            <div class="tools">
+              <span class="tag">AutoCAD</span>
+              <span class="tag">Technical Drawing</span>
+            </div>
+          </article>
+
+          <!-- Add more projects as needed -->
+          <article class="proj">
+            <div style="display:flex;gap:12px;align-items:center">
+              <div style="flex:1">
+                <strong>Production Forecasting</strong>
+                <div class="small muted">Decline curve analysis and forecasting</div>
+              </div>
+              <div style="text-align:right"><button class="btn" onclick="openProject(4)">Details</button></div>
+            </div>
+            <div class="thumb" style="margin-top:12px">Petrel / Excel</div>
+            <div class="tools">
+              <span class="tag">Decline Analysis</span>
+              <span class="tag">Petrel</span>
+              <span class="tag">Excel</span>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj" style="padding:12px;text-align:center;color:var(--muted)">More projects available on request — replace these cards with your project snapshots or downloads.</div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+          <div class="skills-list">
+            <div class="tag">AutoCAD</div>
+            <div class="tag">Petrel</div>
+            <div class="tag">Aspen HYSYS</div>
+            <div class="tag">Reservoir Mapping</div>
+            <div class="tag">Decline Curve Analysis</div>
+            <div class="tag">P&ID Reading</div>
+            <div class="tag">MS Excel</div>
+            <div class="tag">Technical Reporting</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <strong>Bachelor of Science in Petroleum Engineering</strong>
+          <div class="muted small">[University name] — Graduation Year</div>
+          <p style="margin-top:8px">Relevant courses: Reservoir Engineering, Production Operations, Process Simulation, Drilling & Completions.</p>
+        </div>
+      </section>
+
+      <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="grid">
+          <div class="card">Certificate: AutoCAD — [Provider] <div class="small muted">Year</div></div>
+          <div class="card">Certificate: Petrel Basics — [Provider] <div class="small muted">Year</div></div>
+          <div class="card">Certificate: Aspen HYSYS Intro — [Provider] <div class="small muted">Year</div></div>
+        </div>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <div class="card">
+          <ul>
+            <li><strong>Best Engineering Project</strong> — [Competition / University], Year</li>
+            <li><strong>Dean's List</strong> — [Semester / Year]</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-grid">
+          <div class="card form">
+            <p class="small muted">Note: GitHub Pages has no server side processing. Use the mail link below or upload a resume/host a form service (e.g., Formspree) if you want an actual form backend.</p>
+            <label class="small">Email</label>
+            <input type="email" id="email" placeholder="your.email@example.com" />
+            <label class="small">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi — I saw your portfolio..."></textarea>
+            <button class="btn" onclick="sendMail()">Send email</button>
+          </div>
+
+          <div class="card">
+            <p style="margin:0 0 8px"><strong>Email</strong></p>
+            <p class="small muted">youremail@example.com</p>
+            <p style="margin-top:12px"><strong>LinkedIn</strong></p>
+            <p class="small muted"><a href="#">linkedin.com/in/yourprofile</a></p>
+            <p style="margin-top:12px"><strong>Location</strong></p>
+            <p class="small muted">Philippines</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="small muted">© <span id="year"></span> Christian Lonoy — Built with minimal design · Hosted on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <!-- Simple modal for project details -->
+  <div id="modal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(11,17,32,0.6);padding:24px">
+    <div style="background:white;padding:20px;border-radius:12px;max-width:760px;width:100%">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <strong id="modal-title">Project title</strong>
+        <button onclick="closeModal()" style="background:none;border:none;font-weight:700">✕</button>
+      </div>
+      <div id="modal-body" style="margin-top:12px;color:var(--muted)"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const projects = {
+      1: {title:'Reservoir Structure Map — Field A', body:'Interpretation and structural contouring using Petrel. Deliverables: structure maps, fault interpretation, and report.'},
+      2: {title:'Process Simulation — Plant B', body:'Aspen HYSYS simulation for inlet separation, compression and throughput optimisation. Includes PFDs and mass balance.'},
+      3: {title:'Well Correlation & As‑built', body:'AutoCAD drawings for wellhead and flowline as‑built documentation. Controlled revisions and markups.'},
+      4: {title:'Production Forecasting', body:'Decline-curve analysis and production forecasting; sensitivity cases and simple economic estimate.'}
+    };
+
+    function openProject(id){
+      const p = projects[id];
+      document.getElementById('modal-title').textContent = p.title;
+      document.getElementById('modal-body').textContent = p.body;
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function closeModal(){document.getElementById('modal').style.display = 'none'}
+
+    function sendMail(){
+      const email = document.getElementById('email').value || 'youremail@example.com';
+      const message = encodeURIComponent(document.getElementById('message').value || 'Hi — I saw your portfolio.');
+      const subject = encodeURIComponent('Portfolio inquiry from website');
+      window.location.href = `mailto:${email}?subject=${subject}&body=${message}`;
+    }
+
+    // Smooth scrolling for nav-links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target = a.getAttribute('href');
+        if(target.length>1){
+          e.preventDefault();
+          document.querySelector(target).scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    });
+  </script>
+</body>
+</html>
