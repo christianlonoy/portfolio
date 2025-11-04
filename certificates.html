@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificates - Christian</title>
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section id="certificates" class="page-fade-in">
+    <header>
+      <a class="header-logo">Christian<span>.</span></a>
+      <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="certificates.html">Certificates</a>
+        <a class="nav-item" href="projects.html">Projects</a>
+        <a class="nav-item" href="about.html">About</a>
+        <a class="nav-item">Contact</a>
+      </nav>
+      <button class="header-btn">Let's Talk</button>
+    </header>
+
+    <div class="cert-container">
+      <h1 class="cert-title">My <span>Certificates</span></h1>
+      <div class="cert-grid">
+        <div class="cert-card" onclick="openModal('Certificates/draft1.jpg')">
+          <img src="Certificates/draft1.jpg" alt="Introduction to Technical Drafting">
+          <p>Introduction to Technical Drafting</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/draft2.jpg')">
+          <img src="Certificates/draft2.jpg" alt="Preparing Computer-Aided Drawings">
+          <p>Preparing Computer-Aided Drawings</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/cse.jpg')">
+          <img src="Certificates/cse.jpg" alt="Civil Service Eligibility">
+          <p>Civil Service Eligibility</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/bosh.jpg')">
+          <img src="Certificates/bosh.jpg" alt="BOSH Certification">
+          <p>BOSH Certification</p>
+        </div>
+      </div>
+    </div>
+    <div class="section-divider">
+         <h2>Seminars & Online Symposiums Attended</h2>
+    </div>
+    <div class="cert-container">
+      <div class="cert-grid">
+        <div class="cert-card" onclick="openModal('Certificates/ChristianLonoy.jpg')">
+          <img src="Certificates/ChristianLonoy.jpg" alt="Impact of Covid-19 on Oil and Gas Industry">
+          <p>Impact of Covid-19 on Oil and Gas Industry</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/spwla.jpg')">
+          <img src="Certificates/spwla.jpg" alt="Career Orientation">
+          <p>Career Orientation</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/Automating the Rod Pump Wellhead Chasing Uptime.jpg')">
+          <img src="Certificates/Automating the Rod Pump Wellhead Chasing Uptime.jpg" alt="Automating the Rod Pump Wellhead Chasing Uptime">
+          <p>Automating the Rod Pump Wellhead Chasing Uptime</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/Dehydration of Carbon Dioxide for CCUS.jpg')">
+          <img src="Certificates/Dehydration of Carbon Dioxide for CCUS.jpg" alt="Dehydration of Carbon Dioxide for CCUS">
+          <p>Dehydration of Carbon Dioxide for CCUS</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/Multiphase Flow Measurement Sensing Domains, Part 1 Electromagnetics.jpg')">
+          <img src="Certificates/Multiphase Flow Measurement Sensing Domains, Part 1 Electromagnetics.jpg" alt="Multiphase Flow Measurement Sensing Domains, Part 1 Electromagnetics">
+          <p>Multiphase Flow Measurement Sensing Domains, Part 1 Electromagnetics</p>
+        </div>
+        <div class="cert-card" onclick="openModal('Certificates/reduced.jpg')">
+          <img src="Certificates/reduced.jpg">
+          <p>Reduced Order Physics (lumped parameter) Models for Coupling Processes at Various Time Length Scales, Preserving the Key Nonlinear Features of Physical Systems</p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+<div id="certModal" class="modal" onclick="closeModal()">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+  function openModal(src) {
+    document.getElementById("certModal").style.display = "flex";
+    document.getElementById("modalImg").src = src;
+  }
+  function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+  }
+</script>
+  </section>
+</body>
+</html>
